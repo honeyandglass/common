@@ -17,8 +17,8 @@ jobs:
       id-token: write
     steps:
       - uses: actions/checkout@v4
-      - name: publish / jsr
-        run: npx jsr publish
+      - run: bun install
+      - run: bunx jsr publish
   publish-npm:
     name: publish / npm
     runs-on: ubuntu-latest
