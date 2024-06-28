@@ -1,0 +1,7 @@
+{
+  "name": "@honey/common",
+  "version": "0.1.0",
+  "exports": {
+    "./logger": "./logger/logger.module.ts"
+  }
+}
