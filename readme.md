@@ -4,7 +4,7 @@
 
 Common set of TypeScript utilities, types, etc.
 
-Need to add documentation and tests but wanted to get an initial public version of this out. 
+Need to add documentation and tests but wanted to get an initial public version of this out.
 
 ## License
 

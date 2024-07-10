@@ -12,13 +12,13 @@ export enum LogLevel {
 }
 
 export enum LogColors {
-  RED = "#F87171",
-  ORANGE = "#FDBA74",
-  YELLOW = "#FDE047",
-  GREEN = "#4ADE80",
-  BLUE = "#60A5FA",
-  PURPLE = "#C084FC",
-  GRAY = "#D1D5DB",
+  RED = '#F87171',
+  ORANGE = '#FDBA74',
+  YELLOW = '#FDE047',
+  GREEN = '#4ADE80',
+  BLUE = '#60A5FA',
+  PURPLE = '#C084FC',
+  GRAY = '#D1D5DB',
 }
 
 export interface Logger {
