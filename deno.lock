@@ -1,0 +1,27 @@
+{
+  "version": "3",
+  "packages": {
+    "specifiers": {
+      "jsr:@folklore/folklore@^0.2.2": "jsr:@folklore/folklore@0.2.2",
+      "npm:chalk@^5.3.0": "npm:chalk@5.3.0"
+    },
+    "jsr": {
+      "@folklore/folklore@0.2.2": {
+        "integrity": "30a37c0cbec0407cab67132e13e2683a4321c5c828ca8a7d310d51eb344051c2"
+      }
+    },
+    "npm": {
+      "chalk@5.3.0": {
+        "integrity": "sha512-dLitG79d+GV1Nb/VYcCDFivJeK1hiukt9QjRNVOsUtTy1rR1YJsmpGGTZ3qJos+uw7WmWF4wUwBd9jxjocFC2w==",
+        "dependencies": {}
+      }
+    }
+  },
+  "remote": {},
+  "workspace": {
+    "dependencies": [
+      "jsr:@folklore/folklore@^0.2.2",
+      "npm:chalk@^5.3.0"
+    ]
+  }
+}

@@ -4,9 +4,9 @@
  * file, You can obtain one at https://mozilla.org/MPL/2.0/.
  */
 
-import { Logger, LogLevel, LogColors } from "./logger.types"
-import { Maybe } from "folklore"
-import chalk from "chalk"
+import { LogColors, type Logger, LogLevel } from './logger.types.ts'
+import { Maybe } from 'folklore'
+import chalk from 'chalk'
 
 export class HoneyLogger implements Logger {
   private readonly _level: LogLevel
@@ -26,29 +26,29 @@ export class HoneyLogger implements Logger {
   private get prefix(): string {
     return this._prefix.matchWith({
       Just: (prefix) => this.paint(`[${prefix}]  `, LogColors.PURPLE),
-      Nothing: () => "",
+      Nothing: () => '',
     })
   }
 
   private get services(): string {
     const services: string = this._services.reduce<string>((final, service) => {
-      const current = service.getOrElse("")
+      const current = service.getOrElse('')
       return final.length ? `${final}/${current}` : current
-    }, "")
-    return services.length ? this.paint(`(${services})  `, LogColors.ORANGE) : ""
+    }, '')
+    return services.length ? this.paint(`(${services})  `, LogColors.ORANGE) : ''
   }
 
   private get timestamp(): string {
     const timestamp = new Date()
     const date = timestamp.toLocaleDateString(undefined, {
-      year: "2-digit",
-      month: "2-digit",
-      day: "2-digit",
+      year: '2-digit',
+      month: '2-digit',
+      day: '2-digit',
     })
     const time = timestamp.toLocaleTimeString(undefined, {
-      hour: "2-digit",
-      minute: "2-digit",
-      second: "2-digit",
+      hour: '2-digit',
+      minute: '2-digit',
+      second: '2-digit',
     })
     const datetime = `${date}  ${time}  `
     return this.paint(datetime, LogColors.GRAY)

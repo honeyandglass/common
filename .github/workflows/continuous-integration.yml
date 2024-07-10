@@ -19,14 +19,16 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - uses: oven-sh/setup-bun@v2
-      - run: bun install
-      - run: bun lint:check
+      - uses: denoland/setup-deno@v1.2.0
+        with:
+          deno-version: v1.x
+      - run: deno lint
   
   format:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - uses: oven-sh/setup-bun@v2
-      - run: bun install
-      - run: bun fmt:check
+      - uses: denoland/setup-deno@v1.2.0
+        with:
+          deno-version: v1.x
+      - run: deno fmt --check
