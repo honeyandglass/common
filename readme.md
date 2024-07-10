@@ -1,5 +1,6 @@
-# @Honey/Common
+# @honey/common
 
+[![JSR](https://jsr.io/badges/@honey/common)](https://jsr.io/@honey/common)
 [![continuous integration](https://github.com/honeyandglass/common/actions/workflows/continuous-integration.yml/badge.svg)](https://github.com/honeyandglass/common/actions/workflows/continuous-integration.yml)
 
 Common set of TypeScript utilities, types, etc.
