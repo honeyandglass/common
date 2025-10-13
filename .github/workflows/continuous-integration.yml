@@ -19,7 +19,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v5
-      - uses: denoland/setup-deno@v1.5.1
+      - uses: denoland/setup-deno@v2.0.3
         with:
           deno-version: v1.x
       - run: deno lint
@@ -28,7 +28,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v5
-      - uses: denoland/setup-deno@v1.5.1
+      - uses: denoland/setup-deno@v2.0.3
         with:
           deno-version: v1.x
       - run: deno fmt --check
